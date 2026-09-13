@@ -233,4 +233,14 @@ def classify_error(exc: Exception) -> str:
     if "timeout" in text:
         return "timeout"
 
-    if "
+    if "429" in text:
+            return "rate_limit"
+    if "quota" in text:
+            return "quota"
+    if "503" in text:
+            return "service_unavailable"
+    if "timeout" in text:
+            return "timeout"
+    if "queue" in text:
+            return "queue"
+        return "unknown"
