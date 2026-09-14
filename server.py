@@ -231,7 +231,7 @@ def generate_with_hf(prompt: str, output_file: Path):
         lora_repo="",
         lora_filename="",
         lora_strength=1.0,
-        generation_preset="Turbo 8-step — faster, cleaner",,
+        generation_preset="Turbo 8-step — faster, cleaner",
         references=None,
         api_name="/generate"
     )
